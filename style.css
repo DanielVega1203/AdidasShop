@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=BhuTuka+Expanded+One&family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&family=Vidaloka&display=swap');
+
+
+body{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+ 
+    left: 0;
+    right: 0;
+    padding: 15px 80px 15px 80px;
+    z-index: 2;
+}
+
+
+
+.header_left {
+    display: flex;
+}
+
+.header_title {
+    font-family: "Bona Nova", serif;
+    letter-spacing: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header_content {
+    display: flex;
+}
+
+.header_list {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header_list li {
+    margin-right: 40px;
+    font-size: small;
+}
+
+
+.header_list li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+}
+
+  
+.header_right input.search_header {
+    margin-right: 70px;
+    padding: 5px 20px 5px 20px;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.header_right input.search_header::placeholder {
+    font-size: 10px;
+}
+
+/* */
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+}
+
+.content1 {
+
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+}
+
+.content1 .card1{
+
+    display: flex;
+    margin: 80px;
+    padding: auto;
+}
+
+.content1 .card2 {
+
+    display: flex;
+    margin: 0px 100px;
+}
+
+.content1 .card2 h1{
+    font-family: "Amarante", serif;
+    font-size: 100px;
+
+}
+
+.content1 .card3{
+    background-color: antiquewhite;
+    display: flex;
+    margin: 80px;
+}
+
+.content2 {
+    width: 35%;
+}
+
+.content2 img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.content2 {
+    width: 35%;
+    position: relative;
+    z-index: 1; 
+}
+
+.content2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.content3 {
+    background-color: rgb(186, 226, 43);
+    width: 25%;
+}
+
+
