@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Desing tienda</title>
 </head>
@@ -11,7 +12,7 @@
     <header class="header">
         <div class="header_left">
             <div class="header_title">
-                NIKE
+                STRIDE
             </div>
             <div class="header_content">
                 <ul class="header_list">
@@ -36,6 +37,7 @@
 
         <div class="header_right">
             <div>
+                <i class="ri-search-line"></i>
                 <input class="search_header" placeholder="Buscar" type="text">
             </div>
             <div>
@@ -47,20 +49,28 @@
     <div class="container">
         
         <div class="content1">
+            <div class="card0">
+            
+            </div>
             <div class="card1">
-                <video id="myVideo" width="320" height="240" controls autoplay muted>
-                    <source src="./img/promo.mp4" type="video/mp4">
-                </video>
-                <h3>Prueba</h3>
+                <div class="videoContent">
+                    <video id="myVideo"  class="videoImage" controls autoplay muted>
+                        <source src="./img/promo.mp4" type="video/mp4">
+                    </video>
+                    <div class="subVideo">
+                        <h3>Futbol</h3>
+                        <p>Avanza con estilo en cada paso.</p>
+                    </div>
+                </div>
             </div>
             
             <div class="card2">
-                <h1>Adidas Futbol</h1>
+                <h1>Adidas</h1>
             </div>
             
             <div class="card3">
-                <button>anterior</button>
-                <button>siguiente</button>
+                <button style="background-color: blueviolet;"><i class="ri-arrow-left-s-line"></i></button>
+                <button style="background-color: yellowgreen;"><i class="ri-arrow-right-s-line"></i></button>
             </div>
         </div>
 
