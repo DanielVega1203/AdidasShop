@@ -120,7 +120,6 @@ body {
 }
 
 .content1 .card0 {
-
   display: flex;
   height: 10vh;
 }
@@ -236,4 +235,92 @@ body {
 .content3 {
   background-color: rgb(186, 226, 43);
   width: 25%;
+  height: 100vh;
+  display: block;
+}
+
+.content3 .card0 {
+  display: flex;
+  height: 10vh;
+}
+
+.content3 .card1 {
+  display: flex;
+  height: 45vh;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 280px; /* Ajusta el ancho del contenedor del carrusel */
+  overflow: hidden;
+  margin: 80px -30px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  min-width: 240px;
+  min-height: 80px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.card button {
+  width: 30px;
+  height: 30px;
+  background-color: #995BD5;
+  border: 1px solid #000;
+  color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.content3 .card2 {
+  display: flex;
+  height: 45vh;
+  background-color: rgb(52, 200, 205);
 }
