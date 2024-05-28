@@ -25,3 +25,4 @@ function moveCarousel() {
 
 // Mover el carrusel cada 3 segundos
 setInterval(moveCarousel, 3000);
+

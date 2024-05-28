@@ -1,148 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Desing tienda</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header">
-        <div class="header_left">
-            <div class="header_title">
-                STRIDE
-            </div>
-            <div class="header_content">
-                <ul class="header_list">
-                    <li>
-                        <a href="#">Colecciones</a>
-                    </li>
+      <div class="header_left">
+        <div class="header_title">STRIDE</div>
+        <div class="header_content">
+          <ul class="header_list">
+            <li>
+              <a href="#">Colecciones</a>
+            </li>
 
-                    <li>
-                        <a href="#">Productos</a>
-                    </li>
+            <li>
+              <a href="#">Productos</a>
+            </li>
 
-                    <li>
-                        <a href="#">Nosotros</a>
-                    </li>
+            <li>
+              <a href="#">Nosotros</a>
+            </li>
 
-                    <li>
-                        <a href="#">Tiendas</a>
-                    </li>
-                </ul>
-            </div>
+            <li>
+              <a href="#">Tiendas</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="header_right">
-            <div>
-                <i class="ri-search-line"></i>
-                <input class="search_header" placeholder="Buscar" type="text">
-            </div>
-            <div>
-                <img style="height: 20px;" src="https://i.pinimg.com/originals/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.png" alt="user">
-            </div>
+      <div class="header_right">
+        <div>
+          <i class="ri-search-line"></i>
+          <input class="search_header" placeholder="Buscar" type="text" />
         </div>
+        <div>
+          <img
+            style="height: 20px"
+            src="https://i.pinimg.com/originals/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.png"
+            alt="user"
+          />
+        </div>
+      </div>
     </header>
-    
+
     <div class="container">
-        
-        <div class="content1">
-            <div class="card0">
-            
+      <div class="content1">
+        <div class="card0"></div>
+        <div class="card1">
+          <div class="videoContent">
+            <video id="myVideo" class="videoImage" controls autoplay muted>
+              <source src="./img/promo.mp4" type="video/mp4" />
+            </video>
+            <div class="subVideo">
+              <h3>Futbol</h3>
+              <p>Avanza con estilo en cada paso.</p>
             </div>
-            <div class="card1">
-                <div class="videoContent">
-                    <video id="myVideo"  class="videoImage" controls autoplay muted>
-                        <source src="./img/promo.mp4" type="video/mp4">
-                    </video>
-                    <div class="subVideo">
-                        <h3>Futbol</h3>
-                        <p>Avanza con estilo en cada paso.</p>
+          </div>
+        </div>
+
+        <div class="card2">
+          <h1>Adidas</h1>
+        </div>
+
+        <div class="card3">
+          <button style="background-color: blueviolet">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <button style="background-color: yellowgreen">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content2">
+        <img src="./img/messiS.png" alt="" />
+      </div>
+
+      <div class="content3">
+        <div class="card0"></div>
+        <div class="card1">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-content-text">
+                    <h3>Clasic SSTR</h3>
+                    <p>Polera con capucha</p>
+                  </div>
+                  <div class="card-content-colors">
+                    <div class="circle purple"></div>
+                    <div class="circle green"></div>
+                    <div class="circle red"></div>
+                  </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-img">
+                      <img
+                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9601178d32a848e4823ef4afb7f91dfe_9366/Polera_con_Capucha_Youth_of_Paris_Plomo_IU3310_21_model.jpg"
+                        alt="Imagen 3"
+                      />
+                    </div>
+                    <div class="card-content-btn">
+                      <button>+</button>
                     </div>
                 </div>
-            </div>
-            
-            <div class="card2">
-                <h1>Adidas</h1>
-            </div>
-            
-            <div class="card3">
-                <button style="background-color: blueviolet;"><i class="ri-arrow-left-s-line"></i></button>
-                <button style="background-color: yellowgreen;"><i class="ri-arrow-right-s-line"></i></button>
-            </div>
-        </div>
-
-        <div class="content2">
-            <img src="./img/messiS.png" alt="">
-        </div>
-
-        <div class="content3">
-            <div class="card0">
-            </div>
-            <div class="card1">
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-text">
-                                    <h3>Título 3</h3>
-                                    <p>Descripción breve 3</p>
-                                </div>
-                                <div class="card-content-colors">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d24e4c93008c4e559f76c67bc6c3b143_9366/Polera_con_Capucha_Flames_Logo_Negro_IS0208_21_model.jpg" alt="Imagen 1">
-                            <button>+</button>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-text">
-                                    <h3>Título 2</h3>
-                                    <p>Descripción breve 2</p>
-                                </div>
-                                <div class="card-content-colors">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/13adff8dc2734547952faef900b43ec9_9366/Polera_con_Capucha_Adicolor_Seasonal_Archive_Negro_IA2531_21_model.jpg" alt="Imagen 2">
-                            <button>+</button>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="card-content-text">
-                                    <h3>Título 3</h3>
-                                    <p>Descripción breve 3</p>
-                                </div>
-                                <div class="card-content-colors">
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-content-img">
-                                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9601178d32a848e4823ef4afb7f91dfe_9366/Polera_con_Capucha_Youth_of_Paris_Plomo_IU3310_21_model.jpg" alt="Imagen 3">
-                                </div>
-                                <div>
-                                    <button>+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Añade más tarjetas aquí -->
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-content-text">
+                    <h3>Henry Jones</h3>
+                    <p>Bolsillo canguro</p>
+                  </div>
+                  <div class="card-content-colors">
+                    <div class="circle purple"></div>
+                    <div class="circle green"></div>
+                    <div class="circle red"></div>
+                  </div>
                 </div>
+                <div class="card-content">
+                    <div class="card-content-img">
+                      <img
+                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfbb40f942c0432a8b2c5af1ca019112_9366/Polera_con_Capucha_Henry_Jones_Estampado_Plomo_IU0135_23_hover_model.jpg"
+                        alt="Imagen 3"
+                      />
+                    </div>
+                    <div class="card-content-btn">
+                      <button>+</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-content-text">
+                    <h3>Flames</h3>
+                    <p>Ajuste holgado</p>
+                  </div>
+                  <div class="card-content-colors">
+                    <div class="circle purple"></div>
+                    <div class="circle green"></div>
+                    <div class="circle red"></div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="card-content-img">
+                    <img
+                      src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d24e4c93008c4e559f76c67bc6c3b143_9366/Polera_con_Capucha_Flames_Logo_Negro_IS0208_21_model.jpg"
+                      alt="Imagen 3"
+                    />
+                  </div>
+                  <div class="card-content-btn">
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Añade más tarjetas aquí -->
             </div>
-
-            <div class="card2">
-                
-            </div>
+          </div>
         </div>
 
+        <div class="card2">
+            <img src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png" class="imgz">
+        </div>
+      </div>
     </div>
 
+    <footer>
+        <div class="footer1">
+            <div class="footer-container">
+                <div class="footer-alto">
+                    <div class="footer-logo">
+                        <div class="footer_title"><h1>STRIDE</h1></div>
+                    </div>
+                    <div class="footer-contact">
+                        <p>Inscríbete y obtén 20% OFF en tu primera compra</p>
+                        <input type="text" placeholder="Correo Electrónico">
+                    </div>
+                </div>
+                <div class="footer-bajo">
+                    <div class="footer-list">
+                        <h3>Ayuda</h3>
+                        <a href="#">Centro de ayuda</a>
+                        <a href="#">Promociones y legales</a>
+                        <a href="#">Opciones de pago</a>
+                        <a href="#">Tipos de envío</a>
+                        <a href="#">Cambios, devoluciones y garantías</a>
+                        <a href="#">Política de privacidad</a>
+                        <a href="#">Términos y condiciones</a>
+                        <a href="#">Preguntas frecuentes/a>
+                        <a href="#">Guía de tallas</a>
+                    </div>
+                    <div class="footer-list">
+                        <h3>Acerda de STRIDE</h3>
+                        <a href="#">Trabaja con nosotros</a>
+                        <a href="#">Acerca de STRIDE</a>
+                        <a href="#">Noticias corporativas</a>
+                        <a href="#">Sustentabilidad</a>
+                        <a href="#">Buscador de tiendas</a> <br> <br>
+                        <div class="footer-reclamaciones">
+                            <img src="https://www.saludayacucho.gob.pe/wp-content/uploads/imagenes/libro_reclamaciones.png" alt="reclamaciones">
+                            <a href="#">
+                                <span class="line-break">Libro de</span>
+                                <span class="line-break">reclamaciones</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-list">
+                        <h3>Redes sociales</h3>
+                        <div class="footer-social">
+                            <i class="ri-facebook-box-fill"></i>
+                            <i class="ri-youtube-fill"></i>
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                        <div class="footer-train">
+                            <img src="https://img.freepik.com/vector-gratis/identidad-marca-logotipo-vectorial-corporativo-diseno-r_460848-10165.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1716422400&semt=ais_user" alt="logo">
+                            <h3>MORE NEARBY STORES</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>© DANIEL CD, 2024. Todos los derechos reservados</p>
+            <div class="footer2-target">
 
+            </div>
+        </div>  
+    </footer>
     
+
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>
