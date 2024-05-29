@@ -168,3 +168,47 @@ nextButton.addEventListener('click', () => changeContent(1));
 
 // Actualizar los colores de los botones, el color de fondo de content3 y el filtro de la card2 al cargar la página
 updateButtonColors();
+
+document.querySelectorAll('.header_list li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const dropdown = item.querySelector('.dropdown_menu');
+      dropdown.style.height = 'auto';
+      dropdown.style.opacity = '1';
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      const dropdown = item.querySelector('.dropdown_menu');
+      dropdown.style.height = '0';
+      dropdown.style.opacity = '0';
+    });
+  });
+  document.querySelectorAll('.header_list li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const dropdown = item.querySelector('.dropdown_menu');
+      dropdown.style.height = 'auto';
+      dropdown.style.opacity = '1';
+      document.querySelector('.header').classList.add('fixed'); // Añade la clase al encabezado
+      dropdown.classList.add('fixed'); // Añade la clase al menú desplegable
+    });
+    
+    item.addEventListener('mouseleave', () => {
+      const dropdown = item.querySelector('.dropdown_menu');
+      dropdown.style.height = '0';
+      dropdown.style.opacity = '0';
+      document.querySelector('.header').classList.remove('fixed'); // Remueve la clase del encabezado
+      dropdown.classList.remove('fixed'); // Remueve la clase del menú desplegable
+    });
+});
+
+window.addEventListener('scroll', scrollHandler);
+
+function scrollHandler() {
+  const header = document.querySelector('.header');
+  const scrollTop = window.scrollY;
+
+  if (scrollTop > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}

@@ -5,11 +5,12 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +19,8 @@ body {
   right: 0;
   padding: 15px 80px 15px 80px;
   z-index: 2;
+  background-color: transparent; /* Fondo transparente por defecto */
+  transition: background-color 0.4s ease; /* Transición suave de 0.5 segundos */
 }
 
 .header_left {
@@ -25,10 +28,12 @@ body {
 }
 
 .header_title {
+  text-decoration: none;
   font-family: "Bona Nova", serif;
   letter-spacing: 8px;
   font-size: 24px;
   font-weight: bold;
+  color: #000;
 }
 
 .header_content {
@@ -74,7 +79,7 @@ body {
 }
 
 .header_list li:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .search {
@@ -89,7 +94,7 @@ body {
   padding: 8px 15px 8px 15px;
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 7.5px;
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -188,6 +193,65 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.dropdown_menu {
+  position: fixed;
+  top: 100%;
+  width: 90vh;
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  justify-content: space-around; 
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); 
+}
+
+.dropdown_menu .column {
+  margin-top: 0;
+}
+
+.dropdown_menu .column2 a {
+  margin-bottom: 5px;
+}
+
+.column h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 0;
+  font-size: 1em;
+  padding-right: 7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(12, 12, 12);
+}
+
+.dropdown_menu a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dropdown_menu a:hover {
+  color: #6a6a6a;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3; /* Ajusta el índice Z según sea necesario */
+}
+
+.fixed .dropdown_menu {
+  top: 30px; /* Ajusta la posición del menú desplegable según sea necesario */
+}
+
+.scrolled {
+  background-color: white; /* Cambia el fondo del encabezado a blanco */
+} 
+
 /* */
 
 .container {
@@ -268,7 +332,7 @@ body {
   opacity: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1285px) {
   .content1 .card2 h1 {
     font-size: 230px; /* Cambiar el tamaño del texto en pantallas más grandes */
   }
