@@ -11,7 +11,7 @@
     <title>Desing tienda</title>
   </head>
   <body>
-    <header class="header">
+    <nav class="header">
       <div class="header_left">
         <div class="header_title">STRIDE</div>
         <div class="header_content">
@@ -35,12 +35,12 @@
         </div>
       </div>
 
-      <div class="header_right">
-        <div>
-          <i class="ri-search-line"></i>
-          <input class="search_header" placeholder="Buscar" type="text" />
+        <div class="search">
+          <input class="search_header" placeholder="Buscar" type="text" id="search"/>
+          <i class="ri-search-line" id="search_icon"></i>
+          <div class="search_bx2">
         </div>
-        <div>
+        <div class="user">
           <img
             style="height: 20px"
             src="https://i.pinimg.com/originals/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.png"
@@ -48,7 +48,7 @@
           />
         </div>
       </div>
-    </header>
+    </nav>
 
     <div class="container">
       <div class="content1">
@@ -66,21 +66,21 @@
         </div>
 
         <div class="card2">
-          <h1>Adidas</h1>
+          <h1 id="wordDisplay">Adidas</h1>
         </div>
 
         <div class="card3">
-          <button style="background-color: blueviolet">
+          <button style="background-color: blueviolet" id="prevButton">
             <i class="ri-arrow-left-s-line"></i>
           </button>
-          <button style="background-color: yellowgreen">
+          <button style="background-color: yellowgreen" id="nextButton">
             <i class="ri-arrow-right-s-line"></i>
           </button>
         </div>
       </div>
 
       <div class="content2">
-        <img src="./img/messiS.png" alt="" />
+        <img id="imageDisplay" src="./img/messiS.png" alt="" />
       </div>
 
       <div class="content3">
@@ -166,10 +166,11 @@
         </div>
 
         <div class="card2">
-            <img src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png" class="imgz">
+            <img id="imageDisplay"  src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png" class="imgz">
         </div>
       </div>
     </div>
+
 
     <footer>
         <div class="footer1">
