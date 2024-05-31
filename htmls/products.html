@@ -7,13 +7,15 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Desing tienda</title>
+    <title>Stride | Products</title>
+    <link rel="icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/styles/productosStyle.css" />
   </head>
-  <body>
+  <body >
+    
     <nav class="header">
       <div class="header_left">
-        <a href="#" class="header_title">STRIDE</a>
+        <a href="/htmls/index.html" class="header_title">STRIDE</a>
         <div class="header_content">
           <ul class="header_list">
             <li>
@@ -154,137 +156,71 @@
       </div>
     
       <div class="search">
-        <input class="search_header" placeholder="Buscar" type="text" id="search" />
-        <i class="ri-search-line" id="search_icon"></i>
+        <div class="searchIconJ">
+          <i class="ri-search-line" id="search_icon"></i>
+          <input class="search_header" placeholder="Buscar" type="text" id="search" />
+        </div>
         <div class="search_bx2"></div>
         <div class="user">
-          <img style="height: 20px" src="https://i.pinimg.com/originals/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.png" alt="user" />
+          <i class="ri-heart-2-line"></i>
+          <i class="ri-shopping-cart-fill"></i>
+          <i class="ri-map-pin-user-fill"></i>
         </div>
       </div>
     </nav>
+
+    <br>
+    <br><br>
     
-
     <div class="container">
-      <div class="content1">
-        <div class="card0"></div>
-        <div class="card1">
-          <div class="videoContent">
-            <video id="myVideo" class="videoImage" controls autoplay muted>
-              <source src="./img/promo.mp4" type="video/mp4" />
-            </video>
-            <div class="subVideo">
-              <h3>Futbol</h3>
-              <p>Avanza con estilo en cada paso.</p>
-            </div>
-          </div>
+      <div class="filters">
+        <div class="filter-group">
+          <label for="category">Categoría:</label>
+          <select id="category">
+            <option value=""> ---- </option>
+            <option value="Chimpunes">Chimpunes</option>
+            <option value="Chompas">Chompas</option>
+            <option value="Gorros">Gorros</option>
+            <option value="Zapatillas">Zapatillas</option>
+            <option value="Guantes">Guantes</option>
+            <option value="Pantalones">Pantalones</option>
+            <option value="Mochilas">Mochilas</option>
+            <option value="Tops">Tops</option>
+          </select>
         </div>
-
-        <div class="card2">
-          <h1 id="wordDisplay">Adidas</h1>
+        <div class="filter-group">
+          <label for="gender">Género:</label>
+          <select id="gender">
+            <option value=""> ---- </option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
         </div>
-
-        <div class="card3">
-          <button style="background-color: blueviolet" id="prevButton">
-            <i class="ri-arrow-left-s-line"></i>
-          </button>
-          <button style="background-color: yellowgreen" id="nextButton">
-            <i class="ri-arrow-right-s-line"></i>
-          </button>
+        <div class="filter-group">
+          <label for="brand">Marca:</label>
+          <select id="brand">
+            <option value=""> --- </option>
+            <option value="Nike">Nike</option>
+            <option value="Puma">Puma</option>
+            <option value="Adidas">Adidas</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="sport">Deporte:</label>
+          <select id="sport">
+            <option value=""> --- </option>
+            <option value="Futbol">Fútbol</option>
+            <option value="baloncesto">Baloncesto</option>
+            <option value="Runing">Runing</option>
+          </select>
         </div>
       </div>
-
-      <div class="content2">
-        <img id="imageDisplay" src="./img/messiS.png" alt="" />
-      </div>
-
-      <div class="content3">
-        <div class="card0"></div>
-        <div class="card1">
-          <div class="carousel-container">
-            <div class="carousel">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Clasic SSTR</h3>
-                    <p>Polera con capucha</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-content-img">
-                      <img
-                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9601178d32a848e4823ef4afb7f91dfe_9366/Polera_con_Capucha_Youth_of_Paris_Plomo_IU3310_21_model.jpg"
-                        alt="Imagen 3"
-                      />
-                    </div>
-                    <div class="card-content-btn">
-                      <button>+</button>
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Henry Jones</h3>
-                    <p>Bolsillo canguro</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-content-img">
-                      <img
-                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfbb40f942c0432a8b2c5af1ca019112_9366/Polera_con_Capucha_Henry_Jones_Estampado_Plomo_IU0135_23_hover_model.jpg"
-                        alt="Imagen 3"
-                      />
-                    </div>
-                    <div class="card-content-btn">
-                      <button>+</button>
-                    </div>
-                  </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Flames</h3>
-                    <p>Ajuste holgado</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-content-img">
-                    <img
-                      src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d24e4c93008c4e559f76c67bc6c3b143_9366/Polera_con_Capucha_Flames_Logo_Negro_IS0208_21_model.jpg"
-                      alt="Imagen 3"
-                    />
-                  </div>
-                  <div class="card-content-btn">
-                    <button>+</button>
-                  </div>
-                </div>
-              </div>
-              <!-- Añade más tarjetas aquí -->
-            </div>
-          </div>
-        </div>
-
-        <div class="card2">
-            <img id="imageDisplay"  src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png" class="imgz">
-        </div>
+      <div class="cards" id="product-cards">
+        <!-- Las tarjetas de productos se generarán aquí -->
       </div>
     </div>
-
+    
+  
 
     <footer>
         <div class="footer1">
@@ -308,7 +244,7 @@
                         <a href="#">Cambios, devoluciones y garantías</a>
                         <a href="#">Política de privacidad</a>
                         <a href="#">Términos y condiciones</a>
-                        <a href="#">Preguntas frecuentes/a>
+                        <a href="#">Preguntas frecuentes</a>
                         <a href="#">Guía de tallas</a>
                     </div>
                     <div class="footer-list">
@@ -350,6 +286,6 @@
     </footer>
     
 
-    <script src="./main.js"></script>
+    <script type="text/javascript" src="/scripts/products.js"></script>
   </body>
 </html>

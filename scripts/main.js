@@ -30,38 +30,33 @@ setInterval(moveCarousel, 3000);
 const marcas = [
     {
         id: 1,
-        img: "./img/nikeLogo.jpg",
+        img: "/img/nikeLogo.jpg",
         nombre: "Nike"
     },
     {
-        id: 1,
-        img: "./img/rebokLogo.jpg",
+        id: 2,
+        img: "/img/rebokLogo.jpg",
         nombre: "Rebook"
     },
     {
-        id: 1,
-        img: "./img/pumaLogo.jpg",
+        id: 3,
+        img: "/img/pumaLogo.jpg",
         nombre: "Puma"
     },
     {
-        id: 1,
-        img: "./img/mizunoLogo.jpg",
+        id: 4,
+        img: "/img/mizunoLogo.jpg",
         nombre: "Mizuno"
     },
     {
-        id: 1,
-        img: "./img/adidasLogo.jpg",
+        id: 5,
+        img: "/img/adidasLogo.jpg",
         nombre: "Adidas"
     },
     {
-        id: 1,
-        img: "./img/filaLogo.jpg",
+        id: 6,
+        img: "/img/filaLogo.jpg",
         nombre: "Fila"
-    },
-    {
-        id: 1,
-        img: "./img/mizunoLogo.jpg",
-        nombre: "Mizuno"
     }
 ]
 
@@ -100,13 +95,15 @@ search.addEventListener('keyup', () => {
             search_bx2.style.opacity = 0;
         }
     }
-});const words = ['Adidas', 'Nike', 'Puma'];
+});
+
+const words = ['Adidas', 'Nike', 'Puma'];
 const logos = [
-  './img/adidas.png',
-  './img/nike.png',
-  './img/puma.png'
+  '/img/adidas.png',
+  '/img/nike.png',
+  '/img/puma.png'
 ];
-const images = ['./img/messiS.png', './img/cr7.png', './img/neymarS.png'];
+const images = ['/img/messiS.png', '/img/cr7.png', '/img/neymarS.png'];
 const content3 = document.querySelector('.content3');
 let titleBody = 0;
 let colorScheme = 0; // Variable para alternar entre los esquemas de colores
@@ -182,6 +179,7 @@ document.querySelectorAll('.header_list li').forEach(item => {
       dropdown.style.opacity = '0';
     });
   });
+  
   document.querySelectorAll('.header_list li').forEach(item => {
     item.addEventListener('mouseenter', () => {
       const dropdown = item.querySelector('.dropdown_menu');
@@ -212,3 +210,4 @@ function scrollHandler() {
     header.classList.remove('scrolled');
   }
 }
+
