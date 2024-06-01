@@ -1,11 +1,10 @@
 
-
 const products = [
     {
         image: '/img/Cap1.png',
         title: 'Puma FUTURE 7 MATCH MG',
         category: 'Chimpunes',
-        description: 'Descripción del producto 2',
+        description: 'Descripción del productoDescripción del producto ',
         price: 349.00,
         gender: 'Masculino',
         brand: 'Puma',
@@ -268,7 +267,7 @@ function renderProducts(filteredProducts) {
     productCards.innerHTML = '';
     filteredProducts.forEach(product => {
         const card = document.createElement('div');
-        card.classList.add('card', 'fade-in'); // Añade la clase de animación
+        card.classList.add('card', 'fade-in');
         card.innerHTML = `
             <div class="card-container">
                 <img src="${product.image}" alt="${product.title}">
@@ -276,15 +275,66 @@ function renderProducts(filteredProducts) {
             </div>
             <div class="card-content">
                 <div class="card-title">${product.title}</div>
-                <div class="card-category">Categoría: ${product.category}</div>
-                <div class="card-price">Precio: s/${product.price.toFixed(2)}</div>
+                <div class="card-category">${product.category}</div>
+                <div class="card-price">${product.price.toFixed(2)}</div>
+                <div class="card-description" style="display: none;">${product.description}</div>
+                <div class="card-gender" style="display: none;">${product.gender}</div>
+                <div class="card-brand" style="display: none;">${product.brand}</div>
+                <div class="card-sport" style="display: none;">${product.sport}</div>
                 <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                <a href="#"><i class="ri-eye-2-line"></i></a>
+                <a href="#" class="toggle-details"><i class="ri-eye-2-line"></i></a>
                 <button class="buy-button">Comprar<i class="ri-check-line check-icon"></i></button>
             </div>
         `;
         productCards.appendChild(card);
     });
+
+    document.querySelectorAll('.toggle-details').forEach(toggle => {
+        toggle.addEventListener('click', event => {
+            event.preventDefault();
+            const card = toggle.closest('.card');
+            const product = {
+                image: card.querySelector('img').src,
+                title: card.querySelector('.card-title').textContent,
+                category: card.querySelector('.card-category').textContent,
+                price: card.querySelector('.card-price').textContent,
+                description: card.querySelector('.card-description').textContent,
+                gender: card.querySelector('.card-gender').textContent,
+                brand: card.querySelector('.card-brand').textContent,
+                sport: card.querySelector('.card-sport').textContent
+            };
+            openModal(product);
+        });
+    });
+}
+
+
+
+function openModal(product) {
+    const modal = document.getElementById('product-modal');
+    const modalDetails = modal.querySelector('.modal-details');
+    modalDetails.innerHTML = `
+        <div class="des-content">
+            <h1>${product.title}</h1>
+            <div class="des-detail">
+                <p><strong>Categoria:</strong> ${product.category}</p>
+                <p><strong>Precio:</strong> ${product.price}</p>
+                <p><strong>Descripción:</strong> ${product.description}</p>
+                <p><strong>Género:</strong> ${product.gender}</p>
+                <p><strong>Marca:</strong> ${product.brand}</p>
+                <p><strong>Deporte:</strong> ${product.sport}</p>
+                <button>Comprar<i class="ri-check-line check-icon"></i></button>
+            </div>
+        </div>
+        <img src="${product.image}">
+    `;
+    modal.style.display = 'flex';
+}
+
+
+function closeModal() {
+    const modal = document.getElementById('product-modal');
+    modal.style.display = 'none';
 }
 
 
@@ -338,6 +388,7 @@ document.querySelectorAll('.header_list li').forEach(item => {
       dropdown.classList.remove('fixed'); // Remueve la clase del menú desplegable
     });
 });
+
 
 window.addEventListener('scroll', scrollHandler);
 

@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Header Styles */
 
 .header {
@@ -376,7 +377,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-
 .card-content {
   position: relative; 
   padding: 15px;
@@ -406,7 +406,6 @@ body {
   font-family: "Outfit", sans-serif;
   font-weight: 210;
 }
-
 
 .card-price {
   position: relative;
@@ -683,3 +682,123 @@ footer {
     width: 250px;
   }
 }
+
+.modal-details {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+.des-content {
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  margin-right: 7.5%;
+}
+
+.des-content h1{
+  width: 280px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  line-height: 1.2;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.473); 
+}
+
+.des-detail p{
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.modal-details img{
+  width: 80%;
+  transition: transform 0.3s ease;
+}
+
+.modal-details img:hover {
+  transform: scale(1.1); /* Cambiar el factor de escala según sea necesario */
+}
+
+.des-content button {
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 15px;
+  position: absolute;
+  border: none;
+  background-color: #e2e2e2;
+  transition: transform 0.3s ease;
+}
+
+.des-content button:hover {
+  transform: scale(1.2);
+  border-bottom: green 1px solid;
+}
+
+.des-content button .check-icon {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translate(100%, -50%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.des-content button:hover .check-icon {
+  transform: translate(400%, -50%);
+  font-size: xx-large;
+  color: green;
+  opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background-color: rgb(248, 248, 248);
+  border-radius: 8px;
+  width: 50%;
+  height: 80%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s;
+}
+
+
+.modal-close-icon i {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .4s ease;
+}
+
+.modal-close-icon i:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
