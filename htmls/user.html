@@ -7,14 +7,29 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>Stride | Streetwear</title>
+    <title>User | Products</title>
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/user.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/login.css" />
   </head>
   <body >
+    
+    <div id="login-container" class="container">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Ingresar</button>
+      </form>
+      <div id="error-message"></div>
+    </div>
+
+    <div id="content" style="display: none;">
     <nav class="header">
       <div class="header_left">
-        <a href="#" class="header_title">STRIDE</a>
+        <a href="/htmls/index.html" class="header_title">STRIDE</a>
         <div class="header_content">
           <ul class="header_list">
             <li>
@@ -162,133 +177,16 @@
         <div class="search_bx2"></div>
         <div class="user">
           <i class="ri-heart-2-line"></i>
-          <i class="ri-shopping-cart-fill"></i>
-          <a href="/htmls/user.html"><i class="ri-map-pin-user-fill"></i></a></i>
+          <i  class="ri-shopping-cart-fill"></i>
+          <i class="ri-map-pin-user-fill"></i>
         </div>
       </div>
     </nav>
+
+    <br>
+    <br><br>
     
-
-    <div class="container">
-      <div class="content1">
-        <div class="card0"></div>
-        <div class="card1">
-          <div class="videoContent">
-            <video id="myVideo" class="videoImage" controls autoplay muted>
-              <source src="/img/promo.mp4" type="video/mp4" />
-            </video>
-            <div class="subVideo">
-              <h3>Futbol</h3>
-              <p>Avanza con estilo en cada paso.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card2">
-          <h1 id="wordDisplay">Adidas</h1>
-        </div>
-
-        <div class="card3">
-          <button style="background-color: blueviolet" id="prevButton">
-            <i class="ri-arrow-left-s-line"></i>
-          </button>
-          <button style="background-color: yellowgreen" id="nextButton">
-            <i class="ri-arrow-right-s-line"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="content2">
-        <img id="imageDisplay" src="/img/messiS.png" alt="" />
-      </div>
-
-      <div class="content3">
-        <div class="card0"></div>
-        <div class="card1">
-          <div class="carousel-container">
-            <div class="carousel">
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Clasic SSTR</h3>
-                    <p>Polera con capucha</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-content-img">
-                      <img
-                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9601178d32a848e4823ef4afb7f91dfe_9366/Polera_con_Capucha_Youth_of_Paris_Plomo_IU3310_21_model.jpg"
-                        alt="Imagen 3"
-                      />
-                    </div>
-                    <div class="card-content-btn">
-                      <button>+</button>
-                    </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Henry Jones</h3>
-                    <p>Bolsillo canguro</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-content-img">
-                      <img
-                        src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfbb40f942c0432a8b2c5af1ca019112_9366/Polera_con_Capucha_Henry_Jones_Estampado_Plomo_IU0135_23_hover_model.jpg"
-                        alt="Imagen 3"
-                      />
-                    </div>
-                    <div class="card-content-btn">
-                      <button>+</button>
-                    </div>
-                  </div>
-              </div>
-              <div class="card">
-                <div class="card-content">
-                  <div class="card-content-text">
-                    <h3>Flames</h3>
-                    <p>Ajuste holgado</p>
-                  </div>
-                  <div class="card-content-colors">
-                    <div class="circle purple"></div>
-                    <div class="circle green"></div>
-                    <div class="circle red"></div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <div class="card-content-img">
-                    <img
-                      src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d24e4c93008c4e559f76c67bc6c3b143_9366/Polera_con_Capucha_Flames_Logo_Negro_IS0208_21_model.jpg"
-                      alt="Imagen 3"
-                    />
-                  </div>
-                  <div class="card-content-btn">
-                    <button>+</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card2">
-            <img id="imageDisplay"  src="https://1000marcas.net/wp-content/uploads/2024/02/Adidas-Logo.png" class="imgz">
-        </div>
-      </div>
-    </div>
-
+    
 
     <footer>
         <div class="footer1">
@@ -352,8 +250,9 @@
             </div>
         </div>  
     </footer>
-    
+  </div>
 
-    <script src="/scripts/main.js"></script>
+    <script type="text/javascript" src="/scripts/products.js"></script>
+    <script type="text/javascript" src="/scripts/login.js"></script>
   </body>
 </html>
